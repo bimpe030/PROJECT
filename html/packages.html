@@ -15,9 +15,16 @@
       referrerpolicy="no-referrer"
     />
 
+    <!------------------------- JavaScript file ----------------------------->
+
+    <script src="../project.js/pro.js"></script>
+
+    <!------------------------- JavaScript file ----------------------------->
+
     <!------------------------- Custom Css file ----------------------------->
     <link rel="stylesheet" href="../index.css/project.css" />
     <link rel="stylesheet" href="../index.css/packages.css" />
+    <link rel="stylesheet" href="../index.css/aside.css" />
     <!------------x------------ Custom Css file -----------x----------------->
   </head>
   <body>
@@ -32,14 +39,22 @@
 
         <div class="nav-toggle">
           <div class="toggle-icons">
-            <i class="fa-solid fa-bars"></i>
+            <i
+              class="fa-solid fa-bars show"
+              onclick="document.getElementById('zain') .style.display='block'"
+              style="width: auto"
+            ></i>
           </div>
         </div>
 
         <div>
           <ul class="nav-items">
-            <li class="nav-link"><a href="../html/packages.html">Packages</a></li>
-            <li class="nav-link"><a href="../html/customer.html">Customers</a></li>
+            <li class="nav-link">
+              <a href="../html/packages.html">Packages</a>
+            </li>
+            <li class="nav-link">
+              <a href="../html/customer.html">Customers</a>
+            </li>
             <li class="host"><a href="#">Start Hosting</a></li>
           </ul>
         </div>
@@ -56,7 +71,7 @@
 
         <section>
           <a href="" class="package-link">
-            <div class="package-1" style="position: relative;">
+            <div class="package-1" style="position: relative">
               <h1>Our PLUS Plan</h1>
               <h2 class="special">RECOMMENDED</h2>
               <h2>The most popular choice of our customers.</h2>
@@ -110,6 +125,20 @@
         <!------------x--------- Packages 3 ----------x----------->
       </div>
     </main>
+
+    <div
+      class="modal"
+      id="zain"
+      onclick="document.getElementById('zain') .style.display='none'"
+    >
+      <div class="put-aside">
+        <div class="put-aside1">
+          <a href="../html/packages.html" class="aside-link">Packages</a>
+          <a href="../html/customer.html" class="aside-link">Customers</a>
+          <a href="#" class="aside-link kept">Start Hosting</a>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <div class="support">

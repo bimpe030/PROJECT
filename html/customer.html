@@ -15,9 +15,16 @@
       referrerpolicy="no-referrer"
     />
 
+    <!------------------------- JavaScript file ----------------------------->
+
+    <script src="../project.js/pro.js"></script>
+
+    <!------------------------- JavaScript file ----------------------------->
+
     <!------------------------- Custom Css file ----------------------------->
     <link rel="stylesheet" href="../index.css/project.css" />
     <link rel="stylesheet" href="../index.css/packages.css" />
+    <link rel="stylesheet" href="../index.css/aside.css" />
     <!------------x------------ Custom Css file -----------x----------------->
   </head>
   <body>
@@ -25,12 +32,18 @@
     <nav class="nav">
       <div class="nav-menu flex-row">
         <div class="nav-brand">
-          <a href="../index.html"><img src="../images/uhost-icon.png" alt="icon"/></a>
+          <a href="../index.html"
+            ><img src="../images/uhost-icon.png" alt="icon"
+          /></a>
         </div>
 
         <div class="nav-toggle">
           <div class="toggle-icons">
-            <i class="fa-solid fa-bars"></i>
+            <i
+              class="fa-solid fa-bars show"
+              onclick="document.getElementById('zain') .style.display='block'"
+              style="width: auto"
+            ></i>
           </div>
         </div>
 
@@ -39,7 +52,9 @@
             <li class="nav-link">
               <a href="../html/packages.html">Packages</a>
             </li>
-            <li class="nav-link"><a href="../html/customer.html">Customers</a></li>
+            <li class="nav-link">
+              <a href="../html/customer.html">Customers</a>
+            </li>
             <li class="host"><a href="#">Start Hosting</a></li>
           </ul>
         </div>
@@ -72,7 +87,7 @@
 
           <div class="customer-2">
             <div class="customer-image">
-              <img src="../images/customer-2.jpg" alt="customer2"/>
+              <img src="../images/customer-2.jpg" alt="customer2" />
             </div>
 
             <div class="customer2-info">
@@ -85,13 +100,26 @@
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
     </main>
 
     <!------------x--------- Main ----------x----------->
+
+    <div
+      class="modal"
+      id="zain"
+      onclick="document.getElementById('zain') .style.display='none'"
+    >
+      <div class="put-aside">
+        <div class="put-aside1">
+          <a href="../html/packages.html" class="aside-link">Packages</a>
+          <a href="../html/customer.html" class="aside-link">Customers</a>
+          <a href="#" class="aside-link kept">Start Hosting</a>
+        </div>
+      </div>
+    </div>
 
     <!--------------------- Footer --------------------->
     <footer>
