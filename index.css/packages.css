@@ -77,7 +77,7 @@
     color: white !important;
     padding: 0.5rem !important;
     background: red;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 
@@ -164,6 +164,10 @@
 
     .customer-2{
         flex-direction: column-reverse;
+    }
+
+    .customer-1{
+        margin-top: 6vh;
     }
 
     .package-1 {
