@@ -1,0 +1,281 @@
+.packages-background{
+    background: url('../images/plans-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(40%);
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 7.1vh;
+}
+
+.pack-set{    
+    padding-top: 16.7vh;
+}
+
+.package-1{
+    padding: 1.5rem 2rem;
+    width: 75%;
+    background: rgba(213, 255, 220, 0.95);
+    border-color: rgb(14, 79, 31) rgb(14, 79, 31) rgb(14, 79, 31);
+    border-width: 4px 4px 4px 0px;
+    border-style: solid;
+    margin-bottom: 3%;
+}
+
+.package-1:hover{
+    border-color: red;
+    box-shadow: 1px 1px 2px 2px rgb(0 0 0 / 40%);
+}
+
+
+.package-1 h1{
+    padding: 1rem 0;
+}
+
+.package-1 h2{
+    padding: 0.6em 0;
+    color: rgb(151, 151, 151);
+}
+
+.packages-text{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: rgb(14, 79, 31);
+    border: 1px solid rgb(14, 79, 31);
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.pack-right{
+    float: right;
+    text-align: right;
+    border-width: 4px 0px 4px 4px;
+}
+
+.pack-left{
+    float: left;
+    background: rgba(14, 79, 31, 0.95);
+}
+
+.pack-left h2{
+    color: rgb(187, 187, 187)
+}
+
+.pack-left h1{
+    color: white;
+}
+
+.special{
+    position: absolute;
+    right: 1.9%;
+    top: 7%;
+    transform: translate(-7% -1.9%);
+    font-size: 13px;
+    color: white !important;
+    padding: 0.5rem !important;
+    background: red;
+    opacity: 0.6;
+}
+
+
+.customer-container{
+    width: 100%;
+    padding-top: 12%;
+}
+
+.customer-1, .customer-2{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5%;
+}
+
+.customer1-info, .customer2-info{
+    padding: 0 0.5rem;
+    width: 22rem;
+    display: flex;
+}
+
+.customer1-info div, .customer2-info div{
+    margin: auto;
+}
+
+
+.customer-image{
+    max-width: 40rem;
+}
+
+.customer-image img{
+    width: 100%;
+    box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 30%);
+}
+
+.customer-2{
+    flex-direction: row-reverse;
+}
+
+.customer1-info{
+    text-align: right;
+}
+
+.customer1-info h1, h3, p{
+    padding-bottom: 0.5rem;
+}
+
+.customer2-info h1, h3, p {
+    padding-bottom: 0.5rem;
+}
+
+.customer1-info h1, .customer2-info h1 {
+    color: red;
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+.customer1-info p, .customer2-info p {
+    font-size: 1.2rem;
+}
+
+.customer1-info h3, a, .customer2-info h3 {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+
+@media only screen and (max-width: 639px){
+    .customer-1, .customer-2{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .customer1-info, .customer2-info{
+        width: 100%;
+        padding: 0;
+        display: block !important;
+    }
+
+    .customer1-info div, .customer2-info div{
+        padding: 0 0.9rem !important;
+    }
+
+
+    .customer-2{
+        flex-direction: column-reverse;
+    }
+
+    .package-1 {
+        margin-bottom: 7% !important;
+    }
+
+
+
+
+
+
+}
+
+/* .customer-container{
+    width: 100%;
+    padding-top: 12%;
+}
+
+.customer-1, .customer-2{
+    width: 100%;
+    display: inline-block;
+
+}
+
+.customer1-image{
+    float: left;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.customer2-image{
+    float: right;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.customer-container img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 30%);
+}
+
+.customer1-info{
+    float: left;
+    width: 22rem;
+    border: 2px solid black;
+}
+
+.customer2-info{
+    float: right;
+    width: 22rem;
+    border: 2px solid black;
+}
+
+.customer1-info div, .customer2-info div{
+    width: 100%;
+    height: fit-content;
+    border: 2px solid black;
+}
+
+.customer1-info h1, h3, p, .customer2-info h1, h3, p{
+    padding-bottom: 0.5rem;
+}
+
+.customer1-info h1, .customer2-info h1{
+    color: red;
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+.customer1-info p, .customer2-info p{
+    font-size: 1.2rem;
+}
+
+.customer1-info h3, a , .customer2-info h3{
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+
+.customer-1{
+    float: left;
+    text-align: end;
+    margin-bottom: 10vh;
+}
+
+.customer-2{
+    float: right;
+    margin-bottom: 3rem;
+
+}
+
+
+@media only screen and (max-width: 900px){
+   .package-1{
+        margin-bottom: 7% !important;
+   }
+
+   .customer1-info, .customer2-info{
+       width: 100%;
+   }
+
+}
+
+/* 
+@media only screen and (max-width: 639px){
+    .customer-1, .customer-2 {
+        /* flex-direction: column; 
+        width: 100%;
+    }
+
+
+
+} */
+

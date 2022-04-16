@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+
+    <!--------------- Fontawesome --------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!------------------------- JavaScript file ----------------------------->
+
+    <script src="./project.js/pro.js"></script>
+
+    <!------------------------- JavaScript file ----------------------------->
+
+    <!------------------------- Custom Css file ----------------------------->
+    <link rel="stylesheet" href="./index.css/project.css"/>
+
+    <link rel="stylesheet" href="./index.css/aside.css">
+    <!------------x------------ Custom Css file -----------x----------------->
+  </head>
+  <body>
+    <!--------------------- Navbar --------------------->
+    <nav class="nav">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <a href="index.html"
+            ><img src="./images/uhost-icon.png" alt="icon"
+          /></a>
+        </div>
+
+        <div class="nav-toggle">
+          <div class="toggle-icons">
+            <i class="fa-solid fa-bars show" onclick="document.getElementById('zain') .style.display='block'"  style="width: auto"
+            ></i>
+          </div>
+        </div>
+
+        <div>
+          <ul class="nav-items">
+            <li class="nav-link">
+              <a href="./html/packages.html">Packages</a>
+            </li>
+            <li class="nav-link">
+              <a href="./html/customer.html">Customers</a>
+            </li>
+            <li class="host"><a href="#">Start Hosting</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-----------x--------- Navbar ---------x----------->
+
+    <!--------------------- Main title --------------------->
+
+    <main>
+      <!--------------------- Section 1 --------------------->
+
+      <section>
+        <div class="sec-pic">
+          <div class="sec-picture">
+            <div class="picture-text">
+              <h1>Get the freedom you deserve.</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----------x--------- Section 1 ----------x---------->
+
+      <!--------------------- Section 2 --------------------->
+
+      <section>
+        <div class="plan-head">
+          <div class="plan-text">
+            <h1>Choose Your Plan</h1>
+          </div>
+          <div class="flex-row plan">
+            <div class="card-1" style="margin-top: 1.7rem">
+              <h1>FREE</h1>
+              <h2>$0/month</h2>
+              <h3>For hobby projects or small teams.</h3>
+              <p class="space-4">1 Workspace</p>
+              <p class="space-4">Unlimited Traffic</p>
+              <p class="space-4">10GB Storage</p>
+              <p class="space-4">Basic Support</p>
+
+              <button class="btn">CHOOSE PLAN</button>
+            </div>
+            <div
+              class="card-1 seen"
+              style="
+                box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 50%);
+                background: #19b84c;
+                color: white;
+              "
+            >
+              <h1 class="recommend">RECOMMENDED</h1>
+              <h1 style="color: white">PLUS</h1>
+              <h2 style="color: #0e4f1f">$29/month</h2>
+              <h3>For ambitious projects.</h3>
+              <p class="space-4">5 Workspace</p>
+              <p class="space-4">Unlimited Traffic</p>
+              <p class="space-4">100GB Storage</p>
+              <p class="space-4">Plus Support</p>
+              <button class="btn">CHOOSE PLAN</button>
+            </div>
+            <div class="card-1" style="margin-top: 1.7rem">
+              <h1>PREMIUM</h1>
+              <h2>$99/month</h2>
+              <h3>Your enterprise solution.</h3>
+              <p class="space-4">10 Workspace</p>
+              <p class="space-4">Unlimited Traffic</p>
+              <p class="space-4">Unlimited Storage</p>
+              <p class="space-4">Priority Support</p>
+              <button class="btn">CHOOSE PLAN</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-----------x--------- Section 2 --------x------------>
+
+      <section>
+        <div class="pictures-post">
+          <div class="post-text">
+            <h1>Many Good Reasons to Stick Around</h1>
+          </div>
+
+          <div class="pic-post">
+            <div class="pic-posting">
+              <div class="keep">
+                <img src="./images/admin.png" alt="admin" />
+              </div>
+              <h3>3,857,000 Trusting Customers</h3>
+            </div>
+            <div class="pic-posting">
+              <div class="keep">
+                <img
+                  src="./images/shield.png"
+                  alt="admin"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    left: 10%;
+                    top: 10%;
+                    transform: translate(-10% -10%);
+                  "
+                />
+              </div>
+              <h3>99.999% Uptime Guarantee</h3>
+            </div>
+            <div class="pic-posting">
+              <div class="keep">
+                <img src="./images/cloud-computing.png" alt="admin" />
+              </div>
+              <h3>Lightning Fast CDN</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-----------x---------- Main title ----------x----------->
+
+    <div class="modal" id="zain" onclick="document.getElementById('zain') .style.display='none'">
+      <div class="put-aside">
+        <div class="put-aside1">
+          <a href="./html/packages.html" class="aside-link">Packages</a>
+          <a href="./html/customer.html" class="aside-link">Customers</a>
+          <a href="#" class="aside-link kept">Start Hosting</a>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------- Footer --------------------->
+    <footer>
+      <div class="support">
+        <a>Support</a>
+        <a>Terms of Use</a>
+      </div>
+    </footer>
+    <!-----------X--------- Footer -----------X--------->
+  </body>
+</html>
