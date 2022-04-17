@@ -368,4 +368,8 @@ main{
      .support{
          margin-top: 5rem;
      }
+
+     .pic-post{
+         gap: 1.5rem;
+     }
 }
