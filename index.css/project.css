@@ -219,16 +219,6 @@ ul{
     color: #0e4f1f;
 }
 
-/* .space-1 {
-        color: #0e4f1f;
-        font-size: 18px;
-        font-weight: 700;
-}
-
-.space-2{
-        color: #858585;
-        
-} */
 
 /* --------x--------- section 2 ---------x------------- */
 
@@ -244,7 +234,7 @@ ul{
 
 .post-text{
     text-align: center;
-    padding: 2.2rem 0;
+    padding: 2.2rem;
 }
 
 .pic-post{
