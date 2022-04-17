@@ -32,12 +32,14 @@
 
 
 .package-1 h1{
-    padding: 1rem 0;
+    padding: 1.4rem 0 0 0;
+    color: black;
 }
 
 .package-1 h2{
-    padding: 0.6em 0;
+    padding: 0.8em 0;
     color: rgb(151, 151, 151);
+    font-size: 1.5rem;
 }
 
 .packages-text{
@@ -61,7 +63,8 @@
 }
 
 .pack-left h2{
-    color: rgb(187, 187, 187)
+    color: rgb(187, 187, 187);
+    
 }
 
 .pack-left h1{
@@ -73,11 +76,10 @@
     right: 1.9%;
     top: 7%;
     transform: translate(-7% -1.9%);
-    font-size: 13px;
+    font-size: 13px !important;
     color: white !important;
     padding: 0.5rem !important;
-    background: red;
-    opacity: 0.8;
+    background: #ff5454;
 }
 
 
