@@ -22,9 +22,9 @@
     <!------------------------- JavaScript file ----------------------------->
 
     <!------------------------- Custom Css file ----------------------------->
-    <link rel="stylesheet" href="./index.css/project.css"/>
+    <link rel="stylesheet" href="./index.css/project.css" />
 
-    <link rel="stylesheet" href="./index.css/aside.css">
+    <link rel="stylesheet" href="./index.css/aside.css" />
     <!------------x------------ Custom Css file -----------x----------------->
   </head>
   <body>
@@ -39,7 +39,10 @@
 
         <div class="nav-toggle">
           <div class="toggle-icons">
-            <i class="fa-solid fa-bars show" onclick="document.getElementById('zain') .style.display='block'"  style="width: auto"
+            <i
+              class="fa-solid fa-bars show"
+              onclick="document.getElementById('zain') .style.display='block'"
+              style="width: auto"
             ></i>
           </div>
         </div>
@@ -93,7 +96,9 @@
               <p class="space-4">10GB Storage</p>
               <p class="space-4">Basic Support</p>
 
-              <button class="btn">CHOOSE PLAN</button>
+              <button class="btn" 
+              onclick="document.getElementById('move') .style.display='block'" 
+              style="width: auto">CHOOSE PLAN</button>
             </div>
             <div
               class="card-1 seen"
@@ -111,7 +116,9 @@
               <p class="space-4">Unlimited Traffic</p>
               <p class="space-4">100GB Storage</p>
               <p class="space-4">Plus Support</p>
-              <button class="btn">CHOOSE PLAN</button>
+              <button class="btn"
+              onclick="document.getElementById('move') .style.display='block'"
+              style="width: auto">CHOOSE PLAN</button>
             </div>
             <div class="card-1" style="margin-top: 1.7rem">
               <h1>PREMIUM</h1>
@@ -121,7 +128,9 @@
               <p class="space-4">Unlimited Traffic</p>
               <p class="space-4">Unlimited Storage</p>
               <p class="space-4">Priority Support</p>
-              <button class="btn">CHOOSE PLAN</button>
+              <button class="btn" 
+              onclick="document.getElementById('move') .style.display='block'"
+              style="width: auto">CHOOSE PLAN</button>
             </div>
           </div>
         </div>
@@ -177,6 +186,17 @@
           <a href="./html/packages.html" class="aside-link">Packages</a>
           <a href="./html/customer.html" class="aside-link">Customers</a>
           <a href="#" class="aside-link kept">Start Hosting</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="yes-cover" id="move">
+      <div class="yes">
+        <h1>Do you want to continue?</h1>
+
+        <div class="yes-action">
+          <a href="./html/customer.html" class="yes-link1">Yes!</a>
+          <a href="#" class="yes-link2" onclick="document.getElementById('move') .style.display='none'">No!</a>
         </div>
       </div>
     </div>
